@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Başvuru formu</title>
+</head>
+<body bgcolor="#ebc8b2">
+    <style>
+        form {
+          display: flex;
+          flex-direction: column;
+          width: 400px;
+          margin: 0 auto;
+          padding: 20px;
+          border: 1px solid #ccc;
+        }
+      
+        label {
+          display: block;
+          margin-bottom: 10px;
+        }
+      
+        input {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ccc;
+        }
+      
+        .required {
+          color: red;
+        }
+      
+        .button:hover {
+  background-color: green;
+  color: white;
+}
+        
+      </style>
+     <center> <img src="photo_2023-11-29 00.50.35.jpeg" alt="osman" width="300" height="300"> </center>
+   <center> <h1>Başvuru Formu</h1></center>
+   <center> <p>Tüm formu eksiksiz doldurduğunuzdan emin olunuz aksi takdirde başvurunuz geçersiz sayılacaktır.</p></center>
+ <form name="kayıt" action="mail.php" method="get">
+Ad Soyad: <input type="text" name="adsoyad" id=adsoyad required> <!--required gerekli diye uyarı verir-->
+<br>
+E-Mail:   <input type="text" name="mail" id=email required 
+autofocus placeholder="e mail yaz"> <!--kutunun üzerine yazı yazar-->
+<br>
+TC:    <input type="number" name="tc" id=tc 
+autofocus placeholder="tc kimlik no giriniz">
+<br>
+Yaşınız: <input type="number" name="yas" id="yas" required>
+<br>
+Telefon: <input type="number" name="tel" required autofocus placeholder="örn:+90 5xxxxxxxx">
+<br>
+<br>
+Cinsiyetiniz : <input type="radio" name="cinsiyet" value="futbol" > Erkek
+<input type="radio" name="spor" value="cinsiyet"> Kız
+<br>
+<br>
+<h3>Kullanıcı bilgileri</h3>
+Kullanıcı Adı: <input type="text" name="id" required autofocus placeholder="isminizle ilişkilı olmalı">
+<br>
+Şifreniz: <input type="password" name="pass" required>
+<br>
+Şifre Tekrar: <input type="pasword" name="pass" required autofocus placeholder="şifreyi tekrar giriniz">
+<br>
+<h3>Adres Bilgileri</h3> <br>
+Ev Adresi: <textarea name="Ev adresi" id="" cols="30" rows="4"></textarea>
+<br>
+İş Adresi(isteğe bağlı): <textarea name="" id="" cols="30" rows="3"></textarea>
+<br>
+<h3>Eğitim ve İş Bilgileri</h3>
+Sahip olduğunuz dilleri lütfen seçiniz. <br>
+<br>
+1.
+<select name="diller"> <!--burada seçenek listesinde olmasını istedğimiz verileri giriyoruz-->
+    <option>Türkçe</option>
+    <option>İngilizce</option>
+    <option>Arapça</option>
+    <option>Fransızca</option> 
+    </select>
+2.
+<select name="diller"> 
+    <option>Türkçe</option>
+    <option>İngilizce</option>
+    <option>Arapça</option>
+    <option>Fransızca</option> 
+    <option>yok</option>
+    </select>
+3.
+<select name="diller"> 
+    <option>Türkçe</option>
+    <option>İngilizce</option>
+    <option>Arapça</option>
+    <option>Fransızca</option> 
+    <option>yok</option>
+    </select> <br>
+    <br>
+    <br>
+    Öğrenim Seviyeniz: 
+    <select name="öğrenim"> 
+        <option>İlkokul</option>
+        <option>Ortaokul</option>
+        <option>lise</option>
+        <option>Üniversite</option> 
+        <option>Yüksek Lisans</option>
+        <option>sürünüyorum</option>
+        <option>İşssiz</option>
+        </select> <br>
+        <br>
+
+Öneri : <textarea name="oneri" id="" cols="40" rows="5" autofocus placeholder="öneri ve görüşleriniz bizim için önemli (:"></textarea>
+<br>
+<input type="submit" value="Gönder" class="button" > 
+<input type="reset" value="İptal" class="button">  <!--value resetler temizler-->   
+
+<footer>
+    <p>Copyright © 2023</p>
+    <a href="https://www.instagram.com/eyupduruk0">
+      <img src="resimlerim/logoinsta.webp" alt="Instagram" width="35">
+    </a>
+    <a href="https://www.instagram.com/eyupduruk0">
+        <img src="resimlerim/logoinsta.webp" alt="Instagram" width="35">
+      </a>
+  </footer>
+  
+
+
+
+</body>
+</html>
